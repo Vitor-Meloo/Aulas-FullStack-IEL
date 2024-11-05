@@ -1,0 +1,34 @@
+main {
+    width: 100%;
+}
+
+h1{
+    background-color: aqua;
+    display: inline-block;
+
+}
+
+.div-1{
+    width: 200px;  
+    height: 200px;
+    background-color: black; 
+    color: white;
+    /*visibility: hidden; Faz com que o elemento não apareça, mas continue la ocupando o espaço*/
+    /*display: none; Faz com que agora o elemento não ocupe mais espaço de tela*/
+    display: inline-block; /*Une o comportamento de linhas com o de blocos */
+
+}
+
+.div-2{
+    width: 200px;  
+    height: 200px;
+    background-color: rgb(216, 19, 19); 
+    color: white;
+    display: inline-block;  
+}
+
+.div-3{
+    width: 200px;  
+    height: 200px;
+    background-color: rgb(10, 61, 215);   
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com midias</title>
+</head>
+
+<body>
+    <h1>Importação de midias</h1>
+    <hr>
+
+    <img  width="200px" height="200px" src="arquivos/Sorriso olhos fechados.png" alt="">
+    
+    <br>
+
+    <audio src="arquivos/trilha.mp3" controls></audio> <!--O audio só irá aparecer com o atributo CONTROLS-->
+    
+    <audio controls ><!--Outra maneira de importar, que é mais eficiente em termos de leitura no nacegador-->
+        <source src="arquivos/Glacier - Patrick Patrikios.mp3" type="audio/mp3">
+        O navegador não suporta os arquivos de audio
+    </audio>
+
+    <br>
+
+    <video width="350px" height="350px" src="arquivos/Pexels Videos 2256075.mp4" controls></video>
+
+    <video width="350px" height="350px" controls>
+        <source  src="arquivos/1.mp4" type="video/mp4">
+    </video>
+
+    <br>
+    
+    <iframe width="100%" src="iframe.html" frameborder="0"></iframe> <!--Importa uma página html direto na pagina-->
+    
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+* { /*Com o uso das aspas podemos resetar todos os estilos padrões da pagina*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    background-color: gray;
+    display: flex; /*Os elementos filhos diretos do Header não vão ter mais comportamento de bloco*/
+    justify-content: center;/*Justifica os elementos ao centro do eixo x*/
+    align-items: center;/*Jusutifica os elementos no eixo y*/
+    /*flex-direction: column;/*esse comando diz a direção dos elementos flex, aqui em forma de coluna*/
+}
+
+header div{
+    width: 80%; /*Com isso a div terá 80% do tamanho do header*/
+    display: flex;
+    align-items: center;/*Os items serão alinhados no eixo horizontal*/
+    justify-content: space-between; /*Os elementos vão ser distribuidos uniformemente dentro da DIV*/
+
+}
+
+ul{ /*Agora o UL que é filho do NAV também vai se comportar com o display flex*/
+    display: flex;
+    gap: 10px;/*Essa propriedade só é possível com elementos displayflex*/
+}
+
+/*Em resumo ao aplicar o displayflex a alguma tag é possível fazer com que os elementos dentro dela (filhos diretos)
+se comportem de maneira mais organizada no seu alinhamento*/
+
+/*O MAIS IMPORTANTE A SE SABER É QUE O JUSTIFY-CONTENT ALINHA OS ELEMENTOS FLEX NA HORIZONTAL COM:
+justify-content:flex-start
+justify-content:flex-end
+justify-content:center
+justify-content:space-between
+justify-content:space-around
+justify-content:space-evenly
+*/

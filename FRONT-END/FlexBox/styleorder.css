@@ -1,0 +1,76 @@
+* { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    background-color: gray;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+header div{
+    width: 80%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+
+ul{ 
+    display: flex;
+    gap: 10px;
+}
+
+main{
+    background-color: lightgray;
+    display: flex;/*Colocando o container que está dentro da main como um elemento flex*/
+    justify-content: center;/*Justificando os elementos(container) que esta dentro da main no centro*/
+}
+
+.container{/*DIV filha da Main*/
+    width: 80%;
+    padding: 20px;
+    height: 800px;
+    background-color: red;
+    display: flex;/*Fazendo com que as divs que estão dentro desse elemento também virarem elementos flex*/
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    /*flex-direction: row-reverse;*//*Usando isso se reverte a ordem criada nas divs com o order*/
+    /*flex-direction: column-reverse;*//*Se rever a ordem de baixo para cima de for em colunas*/
+}
+/*DIVS filhas do Container*/
+
+.container div{
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    color: white;
+}
+
+
+.bloco1{
+   order: 1;
+}
+
+.bloco2{
+    order: 2;
+}
+
+.bloco3{
+    order: 3;
+}
+
+.bloco4{
+    order: 5;/*Com a propriedade order, o bloco 4, poderá ficar na 5 posição da esquerda pra direita*/ 
+}
+
+.bloco5{
+    order: 4; /*Do mesmo jeito o bloco 5 irá mudar de posição e ir para a posição 4*/
+}
+/*Não é necessário seguir uma ordem numerica, a ordem irá do menor para o maior por padrão, podendo ser até
+valores negativos tipo: -2,-1, 0, 1, 2 */

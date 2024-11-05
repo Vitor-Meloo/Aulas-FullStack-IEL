@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-global{/*Container que segura todo mundo dentro dele*/
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.container-global header{/*Aqui é o header que é filho do container global fazendo a parte de cabeçalho*/
+    width: 100%;
+    height: 120px;
+    background-color: brown;   
+}
+
+.main{ /*A main que vai segurar os conteudos centrais do dentro dele*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-main{/*Container filho da Main, que vai segurar o Aside e Section dentro dele*/
+    width: 80%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    gap: 20px;
+}
+
+.container-main aside{/*Aside filho do container main*/
+    width: 200px;
+    height: 100%;
+    background-color: rgb(225, 139, 34);
+   
+}
+
+.container-main section{/*section filha do container main*/
+    width: 100%;
+    background-color: rgb(38, 210, 38);
+    gap: 20px;
+}
+
+.footer{/*Rodapé da página*/
+    width: 100%;
+    height: 120px;
+    background-color: rgb(13, 0, 252); 
+}
+

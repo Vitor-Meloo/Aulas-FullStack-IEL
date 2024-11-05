@@ -1,0 +1,1 @@
+document.write("<h1>Hello World<h1>"); /*É possível inserir tags direto na parte JS*/

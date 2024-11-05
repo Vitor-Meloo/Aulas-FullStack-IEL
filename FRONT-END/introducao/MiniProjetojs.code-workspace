@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Atividades"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Codigos_das_aulas"
+	}
+}
