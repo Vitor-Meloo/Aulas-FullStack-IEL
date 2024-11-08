@@ -1,0 +1,4 @@
+Resumo rápido
+Enviar atualizações: git add . → git commit -m "mensagem" → git push origin main
+Trazer atualizações: git pull origin main
+Esses comandos permitem que você mantenha seu repositório sincronizado entre o local e o remoto.
