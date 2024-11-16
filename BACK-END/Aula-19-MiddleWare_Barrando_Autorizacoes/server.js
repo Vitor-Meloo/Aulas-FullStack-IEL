@@ -1,6 +1,5 @@
 const express = require('express')
-const UsuariosRotas = require('./rotas/UsuariosRotas');
-const PostsRotas = require('./rotas/PostsRouters');
+const RotasPrivadas = require('./rotas/RotasPrivadas');
 
 const host = "localhost";
 const port = 3000;
@@ -12,8 +11,8 @@ app.get('/', (request, response) => {
     return response.send("Olá eu sou o servidor Node + Express")
 })
 
-app.use(UsuariosRotas);
-app.use(PostsRotas);
+
+app.use(RotasPrivadas);
 
 app.post('/teste/:codigo', (request, response) => {
 
