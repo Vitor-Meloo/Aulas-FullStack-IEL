@@ -1,4 +1,5 @@
 const express = require('express');
+const jwt = require('jsonwebtoken'); // Chamando a lib do JWT
 const AuthController = require('../controllers/AuthController');
 
 
@@ -9,8 +10,9 @@ RotasPublicas.post('/login', (request, response) => {
     const auth = new AuthController();
     const dados = auth.login(body.login, body.senha);
     if (dados) {
+        const token = jwt.sign(dados, 'qwe123rty456uio789')
         return response.json({
-            token: dados
+            token: token
         })
     }
 
@@ -20,7 +22,6 @@ RotasPublicas.post('/login', (request, response) => {
 
 
 })
-
 
 
 module.exports = RotasPublicas;

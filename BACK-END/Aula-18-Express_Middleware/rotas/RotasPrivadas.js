@@ -2,8 +2,6 @@ const express = require('express');
 const UsuariosRotas = require('./UsuariosRotas');
 const PostsRotas = require('./PostsRouters');
 
-
-
 const RotasPrivadas = express.Router();
 
 RotasPrivadas.use((request, response, next) => {//Com isso sempre que eu tentar acessar as rotas, primeiro ele cai no MiddleWare

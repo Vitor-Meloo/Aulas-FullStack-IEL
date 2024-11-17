@@ -32,8 +32,6 @@ app.put('/teste/:codigo', (request, response) => {
 
 });
 
-
-
 app.listen(port, host, () => {
     console.log(`Servidor executando em http://${host}:${port}`);
 })

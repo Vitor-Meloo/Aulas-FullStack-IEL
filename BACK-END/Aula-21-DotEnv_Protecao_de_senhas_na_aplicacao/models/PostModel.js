@@ -1,16 +1,15 @@
 class PostModel {
+    
     static lista = [ 
         {
             id: 1,
             titulo: "HTML e CSS",
-            conteudo: "conteudo do post",
-            user_id: 1
+            conteudo: "conteudo do post"
         },
         {
             id: 2,
             titulo: "Curso de JS",
-            conteudo: "Conteudo JS",
-            user_id: 2
+            conteudo: "Conteudo JS"
         }
 
     ];
